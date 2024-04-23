@@ -4,6 +4,7 @@
 }
 
 .maxWidthWrapper {
+  isolation: isolate;
 }
 
 .header {
@@ -22,6 +23,12 @@
 .description {
   font-size: 1.25rem;
   margin: 0;
+}
+
+.perspectiveDecorator {
+  position: fixed;
+  inset: 55% 0 0;
+  background-color: hsl(195deg 20% 86%);
 }
 
 .characterWrapper {
