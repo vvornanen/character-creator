@@ -41,3 +41,30 @@
 .controlColumn {
   width: 50%;
 }
+
+@media screen and (max-width: 700px) {
+  .header {
+    display: none;
+  }
+
+  .characterWrapper {
+    top: unset;
+    left: 0;
+    bottom: -32px;
+    height: 90%;
+  }
+
+  .controlColumn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 8px;
+    padding-inline: 8px;
+    padding-block-end: 96px;
+  }
+}
